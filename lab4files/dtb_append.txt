@@ -1,0 +1,4 @@
+multiply: multiply@43C00000 {
+	compatible = “ece4730, multiply”;
+	reg = <0x43C00000 0x10000>;
+};
