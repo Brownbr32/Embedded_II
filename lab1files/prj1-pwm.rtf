@@ -6,7 +6,7 @@
 {\listlevel\levelnfc4\leveljc0\levelstartat1{\leveltext\'02\'01.;}{\levelnumbers\'01;}\jclisttab\tx0}\listid1 }}
 {\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
 {\stylesheet{ Normal;}{\s1 heading 1;}}
-{\*\generator Riched20 10.0.18362}{\*\mmathPr\mmathFont2\mnaryLim0\mdispDef1\mwrapIndent1440 }\viewkind4\uc1 
+{\*\generator Riched20 10.0.18362}{\*\mmathPr\mmathFont2\mdispDef1\mwrapIndent1440 }\viewkind4\uc1 
 \pard\keep\keepn\widctlpar\s1\sb240\sl252\slmult1\qc\cf1\f0\fs32\lang9 ECE 4730: Embedded Systems II\par
 
 \pard\widctlpar\sa160\sl252\slmult1\qc\cf2\expndtw15\f1\fs22 Project 1: Hardware PWM in Vivado\par
@@ -78,11 +78,11 @@ Part 2- Coding and Constraints\par
 
 \pard 
 {\pntext\f1 1.\tab}{\*\pn\pnlvlbody\pnf1\pnindent0\pnstart1\pndec{\pntxta.}}
-\widctlpar\fi-360\li720\sa160\sl252\slmult1\cf0\expndtw0 From the \lquote Sources\rquote  window, open the created Verilog file (\lquote .v\rquote  file extension). It will contain a Verilog module with the port declarations described above.\par
+\fi-360\li720\sa160\sl252\slmult1\cf0\expndtw0 From the \lquote Sources\rquote  window, open the created Verilog file (\lquote .v\rquote  file extension). It will contain a Verilog module with the port declarations described above.\par
 
 \pard 
 {\pntext\f1 2.\tab}{\*\pn\pnlvlbody\pnf1\pnindent0\pnstart1\pndec{\pntxta.}}
-\widctlpar\fi-360\li720\sl252\slmult1 Above \lquote endmodule\rquote , add the following line of code:\par
+\fi-360\li720\sl252\slmult1 Above \lquote endmodule\rquote , add the following line of code:\par
 
 \pard\widctlpar\li1008\sa160\sl252\slmult1 assign LEDS[3:0] = SWITCHES[3:0];\par
 
@@ -93,11 +93,11 @@ Part 2- Coding and Constraints\par
 
 \pard 
 {\pntext\f1 1.\tab}{\*\pn\pnlvlbody\pnf1\pnindent0\pnstart1\pndec{\pntxta.}}
-\widctlpar\fi-360\li720\sa160\sl252\slmult1\cf0\expndtw0 Find prj1.xdc in the folder 'lab1Files' and place it in the directory created above (Part 1, step 1: ECE4730_Lab1). \par
+\fi-360\li720\sa160\sl252\slmult1\cf0\expndtw0 Find prj1.xdc in the folder 'lab1Files' and place it in the directory created above (Part 1, step 1: ECE4730_Lab1). \par
 {\pntext\f1 2.\tab}Click the \lquote +\rquote  button under \lquote Sources\rquote . Select \lquote Add or create constraints\rquote  and \lquote Next\rquote . Then click \lquote Add Files\rquote  and navigate to and select prj1.xdc, select \lquote OK\rquote  then \lquote Finish\rquote . See that prj1.xdc now shows up in the \lquote Constraints\rquote  directory in Vivado.\par
 {\pntext\f1 3.\tab}In the left-most section (\b Flow Navigator\b0 ), click on \lquote Generate Bitstream\rquote . Click \lquote Yes\rquote  to run synthesis and implementation, then OK in the following window to launch \lquote Synthesis and Implementation\rquote . (Continue with step 4. Then verify Synthesis completes in step 5).\par
 {\pntext\f1 4.\tab}Verify the top right jumper on the physical FPGA (JP5) is set to JTAG mode ({\pict{\*\picprop{\sp{\sn wzDescription}{\sv Image}}{\sp{\sn posv}{\sv 1}}
-}\pngblip\picw1045\pich349\picwgoal592\pichgoal198 
+}\pngblip\picw1044\pich349\picwgoal592\pichgoal198 
 89504e470d0a1a0a0000000d494844520000011a0000005808060000002a543869000000017352
 474200aece1ce90000000467414d410000b18f0bfc6105000000097048597300000ec300000ec3
 01c76fa8640000188c49444154785eed9d09780ed7fec7bf2af6ecc9fb66dfec0425221a918488
@@ -274,13 +274,13 @@ fc4bd53f124d63606661c3b781d1c6cb6da14623e957a7e6d252ef15fed330f9a3ccad4dfe9026
 Part 4- Your Turn\par
 
 \pard 
-{\listtext\f1 1.\tab}\ls1\widctlpar\fi-360\li720\sa160\sl252\slmult1\cf0\expndtw0 What does the .xdc file do?\par
+{\listtext\f1 1.\tab}\ls1\fi-360\li720\sa160\sl252\slmult1\cf0\expndtw0 What does the .xdc file do?\par
 
 \pard 
-{\listtext\f1 a.\tab}\ls1\ilvl1\widctlpar\fi-360\li1440\sa160\sl252\slmult1 Extra: What does IOSTANDARD LVCMOS33 mean?\par
+{\listtext\f1 a.\tab}\ls1\ilvl1\fi-360\li1440\sa160\sl252\slmult1 Extra: What does IOSTANDARD LVCMOS33 mean?\par
 
 \pard 
-{\listtext\f1 2.\tab}\ls1\widctlpar\fi-360\li720\sa160\sl252\slmult1  What is JTAG mode? Why are we using it?\par
+{\listtext\f1 2.\tab}\ls1\fi-360\li720\sa160\sl252\slmult1  What is JTAG mode? Why are we using it?\par
 {\listtext\f1 3.\tab}Create another project called PWM, and use the switches to adjust the brightness of an LED.\par
 {\listtext\f1 4.\tab}Hint: You will need a clock for this part. Add the following lines to your .xdc file:\par
 
@@ -291,7 +291,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports clk_100MHz]\par
 
 \pard\widctlpar\fi720\li288\sa160\sl252\slmult1 create_clock -add -name sys_clk_pin -period 10.00 -waveform \{0 5\} [get_ports clk_100MHz]\lang9\par
 
-\pard\widctlpar\fi-360\li720\sa160\sl252\slmult1 5.\tab Jackpot Game\par
+\pard\widctlpar\fi-360\li720\sa160\sl252\slmult1 5.\tab Design a \lquote Jackpot game which works as follows: The LEDs glow in a one-hot fashion, which means that the LEDs are turned on one at a time in a sequential manner. Get the transition to happen as fast as you can, while you can still make out which LED is on at a given of time. Assign a DIP switch to  each  of  the  LEDs.  At  any  point  in  time,  if  you  turn  on the switch corresponding to the glowing LED, you win a Jackpot and all the LEDs start glowing!\par
 
 \pard\widctlpar\sa160\sl252\slmult1\lang1033\par
 }
