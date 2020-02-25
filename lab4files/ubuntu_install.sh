@@ -22,7 +22,10 @@ echo "Executing sudo apt-get install make"
 sudo apt-get install make -y > \
             ./tmp/make.txt;
 echo "Executing sudo apt-get install arm*"
-sudo apt-get install arm* -y > ./tmp/arm.txt
+#sudo apt-get install arm* -y > ./tmp/arm.txt;
+sudo apt-get install apt-file > ./tmp/apt-file.txt;
+sudo apt-file update > ./tmp/apt-file_update.txt;
+sudo apt-get install gcc-arm-none-eabi -y > ./tmp/arm-none-eabi.txt;
 #
 #
 #
