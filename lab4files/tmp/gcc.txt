@@ -3,7 +3,6 @@ Building dependency tree...
 Reading state information...
 gcc is already the newest version (4:7.4.0-1ubuntu2.3).
 The following packages were automatically installed and are no longer required:
-  binutils-arm-none-eabi libdumbnet1 libfreetype6 libisl15
-  libnewlib-arm-none-eabi libnewlib-dev libstdc++-arm-none-eabi-newlib
+  libdumbnet1 libfreetype6
 Use 'sudo apt autoremove' to remove them.
 0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
