@@ -1,45 +1,0 @@
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following packages were automatically installed and are no longer required:
-  libdumbnet1 libfreetype6
-Use 'sudo apt autoremove' to remove them.
-The following additional packages will be installed:
-  libapt-pkg-perl libexporter-tiny-perl liblist-moreutils-perl
-  libregexp-assemble-perl
-The following NEW packages will be installed:
-  apt-file libapt-pkg-perl libexporter-tiny-perl liblist-moreutils-perl
-  libregexp-assemble-perl
-0 upgraded, 5 newly installed, 0 to remove and 2 not upgraded.
-Need to get 261 kB of archives.
-After this operation, 784 kB of additional disk space will be used.
-Get:1 http://archive.ubuntu.com/ubuntu bionic/main amd64 libapt-pkg-perl amd64 0.1.33build1 [68.0 kB]
-Get:2 http://archive.ubuntu.com/ubuntu bionic/main amd64 libexporter-tiny-perl all 1.000000-2 [34.6 kB]
-Get:3 http://archive.ubuntu.com/ubuntu bionic/main amd64 liblist-moreutils-perl amd64 0.416-1build3 [55.5 kB]
-Get:4 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libregexp-assemble-perl all 0.36-1 [77.5 kB]
-Get:5 http://archive.ubuntu.com/ubuntu bionic/universe amd64 apt-file all 3.1.5 [25.5 kB]
-Fetched 261 kB in 1s (187 kB/s)
-Selecting previously unselected package libapt-pkg-perl.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 32998 files and directories currently installed.)
-Preparing to unpack .../libapt-pkg-perl_0.1.33build1_amd64.deb ...
-Unpacking libapt-pkg-perl (0.1.33build1) ...
-Selecting previously unselected package libexporter-tiny-perl.
-Preparing to unpack .../libexporter-tiny-perl_1.000000-2_all.deb ...
-Unpacking libexporter-tiny-perl (1.000000-2) ...
-Selecting previously unselected package liblist-moreutils-perl.
-Preparing to unpack .../liblist-moreutils-perl_0.416-1build3_amd64.deb ...
-Unpacking liblist-moreutils-perl (0.416-1build3) ...
-Selecting previously unselected package libregexp-assemble-perl.
-Preparing to unpack .../libregexp-assemble-perl_0.36-1_all.deb ...
-Unpacking libregexp-assemble-perl (0.36-1) ...
-Selecting previously unselected package apt-file.
-Preparing to unpack .../apt-file_3.1.5_all.deb ...
-Unpacking apt-file (3.1.5) ...
-Setting up libapt-pkg-perl (0.1.33build1) ...
-Setting up libexporter-tiny-perl (1.000000-2) ...
-Setting up libregexp-assemble-perl (0.36-1) ...
-Setting up liblist-moreutils-perl (0.416-1build3) ...
-Setting up apt-file (3.1.5) ...
-The system-wide cache is empty. You may want to run 'apt-file update'
-as root to update the cache.
-Processing triggers for man-db (2.8.3-2ubuntu0.1) ...

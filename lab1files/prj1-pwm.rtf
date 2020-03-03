@@ -95,7 +95,7 @@ Part 2- Coding and Constraints\par
 {\pntext\f1 1.\tab}{\*\pn\pnlvlbody\pnf1\pnindent0\pnstart1\pndec{\pntxta.}}
 \fi-360\li720\sa160\sl252\slmult1\cf0\expndtw0 Find prj1.xdc in the folder 'lab1Files' and place it in the directory created above (Part 1, step 1: ECE4730_Lab1). \par
 {\pntext\f1 2.\tab}Click the \lquote +\rquote  button under \lquote Sources\rquote . Select \lquote Add or create constraints\rquote  and \lquote Next\rquote . Then click \lquote Add Files\rquote  and navigate to and select prj1.xdc, select \lquote OK\rquote  then \lquote Finish\rquote . See that prj1.xdc now shows up in the \lquote Constraints\rquote  directory in Vivado.\par
-{\pntext\f1 3.\tab}In the left-most section (\b Flow Navigator\b0 ), click on \lquote Generate Bitstream\rquote . Click \lquote Yes\rquote  to run synthesis and implementation, then OK in the following window to launch \lquote Synthesis and Implementation\rquote . (Continue with step 4. Then verify Synthesis completes in step 5).\par
+{\pntext\f1 3.\tab}In the left-most section (\b Flow Navigator\b0 ), click on \lquote Generate Bitstream\rquote . Click \lquote Yes\rquote  to run synthesis and implementation, then OK in the following window to launch \lquote Synthesis and Implementation\rquote . (Continue with step 4. Then verify generation completes in step 5).\par
 {\pntext\f1 4.\tab}Verify the top right jumper on the physical FPGA (JP5) is set to JTAG mode ({\pict{\*\picprop{\sp{\sn wzDescription}{\sv Image}}{\sp{\sn posv}{\sv 1}}
 }\pngblip\picw1044\pich349\picwgoal592\pichgoal198 
 89504e470d0a1a0a0000000d494844520000011a0000005808060000002a543869000000017352
@@ -281,8 +281,13 @@ Part 4- Your Turn\par
 
 \pard 
 {\listtext\f1 2.\tab}\ls1\fi-360\li720\sa160\sl252\slmult1  What is JTAG mode? Why are we using it?\par
-{\listtext\f1 3.\tab}Create another project called PWM, and use the switches to adjust the brightness of an LED.\par
-{\listtext\f1 4.\tab}Hint: You will need a clock for this part. Add the following lines to your .xdc file:\par
+{\listtext\f1 3.\tab}What pin are the user push buttons wired to? Hint: consult the zybo z7-10 xdc file.\par
+{\listtext\f1 4.\tab}What is the purpose of an edge detection circuit? How should it have been used in the lab?\par
+
+\pard 
+{\listtext\f1 5.\tab}\ls1\fi-360\li720\sl252\slmult1 Create another project called PWM and use the switches to adjust the brightness of an LED.\par
+
+\pard\sl252\slmult1\tab Hint: You will need a clock for this part. Add the following lines to your .xdc file:\par
 
 \pard\widctlpar\fi432\li576\sl252\slmult1\lang1033 #clk_100MHz\lang9\par
 
@@ -291,7 +296,8 @@ set_property IOSTANDARD LVCMOS33 [get_ports clk_100MHz]\par
 
 \pard\widctlpar\fi720\li288\sa160\sl252\slmult1 create_clock -add -name sys_clk_pin -period 10.00 -waveform \{0 5\} [get_ports clk_100MHz]\lang9\par
 
-\pard\widctlpar\fi-360\li720\sa160\sl252\slmult1 5.\tab Design a \lquote Jackpot game which works as follows: The LEDs glow in a one-hot fashion, which means that the LEDs are turned on one at a time in a sequential manner. Get the transition to happen as fast as you can, while you can still make out which LED is on at a given of time. Assign a DIP switch to  each  of  the  LEDs.  At  any  point  in  time,  if  you  turn  on the switch corresponding to the glowing LED, you win a Jackpot and all the LEDs start glowing!\par
+\pard\widctlpar\fi-360\li720\sa160\sl252\slmult1 6.\tab Design a \lquote Jackpot game which works as follows: The LEDs glow in a one-hot fashion, which means that the LEDs are turned on one at a time in a sequential manner. Get the transition to happen as fast as you can, while you can still make out which LED is on at a given of time. Assign a DIP switch to  each  of  the  LEDs.  At  any  point  in  time,  if  you  turn  on the switch corresponding to the glowing LED, you win a Jackpot and all the LEDs start glowing! Use the reset button to reset the game.\par
+\par
 
 \pard\widctlpar\sa160\sl252\slmult1\lang1033\par
 }
