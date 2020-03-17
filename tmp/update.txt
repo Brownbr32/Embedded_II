@@ -1,0 +1,6 @@
+Hit:1 http://us.archive.ubuntu.com/ubuntu bionic InRelease
+Get:2 http://us.archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
+Get:4 http://us.archive.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+Fetched 252 kB in 1s (328 kB/s)
+Reading package lists...
