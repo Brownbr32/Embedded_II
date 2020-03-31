@@ -2,12 +2,7 @@
 #include <linux/kernel.h>	/* Needed for KERN_* and printk */
 #include <linux/init.h>/* Needed for init and exit macros */
 #include <asm/io.h>/* Needed for IOreads and writes */
-#include "xparameters.h"/* Needed for physical address of multiplier */
-/* from xparameters.h */
-#define PHY_ADDR XPAR_MULT_0_S00_AXI_BASEADDR // physical address of multiplier
-/*size of physical address range for multiply */
-#define MEMSIZE XPAR_MULT_0_S00_AXI_HIGHADDR -XPAR_MULT_0_S00_AXI_BASEADDR + 1
-void *virt_addr; // virtual address pointing to multiplier
+#include "~/lab6/mods/multiply.h"/* Needed for physical address of multiplier */
 
 /*  
 This function is run upon module load. This is where you set up data
@@ -17,17 +12,26 @@ static int __init my_init(void)
 	/*  Linux kernel’s version of printf */
 	printk(KERN_INFO "Mapping virtual address...\n");
 	/*  map virtual address to multiplier physical address */
-	// use ioremap
-	
+	virt_addr = ioremap(PHY_ADDR, MEMSIZE);
+
+	// NEW stuff
+  	Major = register_chrdev(0, DEVICE_NAME, &fops);
+
+
+
+
+	// end of NEW stuff
+
 	/*  write 7 to register 0 */
 	printk(KERN_INFO "Writing a 7 to register 0\n");
 	iowrite32(7, virt_addr+0); //base address + offset
+	iowrite32(2, virt_addr+4);
 	/*  Write 2 to register 1 */
 	printk(KERN_INFO"Writing a 2 to register 1\n"); 
 	//use iowrite32
 	
 	printk("Read %d from register 0\n", ioread32(virt_addr+0));
-	printk("Read %d from register 1\n", /*use ioread32*/);
+	printk("Read %d from register 1\n", ioread32(virt_addr+4));
 	printk("Read %d from register 2\n", ioread32(virt_addr+8));
 	//A non 0 return means init_module failed; module can’t be loaded.
 	return 0;

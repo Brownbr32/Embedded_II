@@ -1,0 +1,4 @@
+make[1]: Entering directory '/home/bbrown/linux'
+  CLEAN   /home/bbrown/lab5/.tmp_versions
+  CLEAN   /home/bbrown/lab5/Module.symvers
+make[1]: Leaving directory '/home/bbrown/linux'
