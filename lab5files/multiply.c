@@ -4,9 +4,9 @@
 #include <asm/io.h>/* Needed for IOreads and writes */
 #include "xparameters.h"/* Needed for physical address of multiplier */
 /* from xparameters.h */
-#define PHY_ADDR XPAR_MULT_0_S00_AXI_BASEADDR // physical address of multiplier
+#define PHY_ADDR XPAR_MULTIPLY_0_S00_AXI_BASEADDR // physical address of multiplier
 /*size of physical address range for multiply */
-#define MEMSIZE XPAR_MULT_0_S00_AXI_HIGHADDR -XPAR_MULT_0_S00_AXI_BASEADDR + 1
+#define MEMSIZE XPAR_MULTIPLY_0_S00_AXI_HIGHADDR -XPAR_MULTIPLY_0_S00_AXI_BASEADDR + 1
 void *virt_addr; // virtual address pointing to multiplier
 
 /*  

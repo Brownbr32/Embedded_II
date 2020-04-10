@@ -1,4 +1,4 @@
-obj-m += multiply.o
+obj-m += hello.o
 foobers := ~/linux		# verify this is the path to the kernel source directory
 all:
 	make -C $(foobers) M=$(PWD) modules | tee ./tmpDebug/all.txt
