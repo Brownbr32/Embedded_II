@@ -10,13 +10,15 @@ fi
 
 cd ~/labs/os
 
+echo `pwd`
+
 echo untarring u-boot. Shouldn\'t exceed a minute or two...
-tar -xvf ~/tars-an/u-boot-xlnx-xilinx-v2019.1.tar.gz
-mv ~/labs/os/u-boot-xlnx-xilinx-v2019.1 ~/labs/os/uboot
+tar -xzf ~/tars-an/u-boot-xlnx-xilinx-v2019.1.tar.gz
+mv u-boot-xlnx-xilinx-v2019.1 ~/labs/os/uboot
 
 echo now untarring linux\; shouldn\'t exceed 5 minutes...
-tar -xvf ~/tars-an/linux-xlnx-xilinx-v2019.1.tar.gz
-mv ~/linux-xlnx-xilinx-v2019.1.tar.gz linux
+tar -xzf ~/tars-an/linux-xlnx-xilinx-v2019.1.tar.gz
+mv linux-xlnx-xilinx-v2019.1 linux
 
 bin=$os/bin
 if [ ! -d $bin ]; then
@@ -28,3 +30,5 @@ if [ ! -d $sd ]; then
 fi
 
 source $wd/setenv.sh
+
+echo tars successfully gotten, un-tarred, and then aptly renamed
