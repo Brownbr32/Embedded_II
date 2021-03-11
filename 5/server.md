@@ -73,4 +73,14 @@ _`hello.ko` should appear in that directory upon completion._
 5. Eject it, then place the SD card in the Zybo and _mount_ it (`mount /dev mmcblk0p1 /mnt/`).
 6. _Change directory_ to the newly-mounted SD card and _list_ its contents; verify that `hello.ko` is present.
 7. Insert the **kernel object module** (`insmod hello.ko`).
-8. Run `dmesg | tail`
+8. Run `dmesg | tail` to see the kernel's loading output. Screnshot the output and attach it to your report. _(see the "Hints" section for screnshotting help)_
+9. To remove the inserted module, run the following commands:
+```
+mkdir /lib/modules/`uname -r` # "`" != "'", it's above Tab
+rmmod hello                   # removes the module
+lsmod                         # verifies module removal
+```
+- the "\`" character runs the enclosed command _first_, and places the command's _output_ as an argument.
+- `uname -r` returns the kernel's current name and version; it's necessary for safe module dismantling.
+
+#### Part 3 - Your turn (`multiply.ko`, memory mapping)
