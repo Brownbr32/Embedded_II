@@ -68,6 +68,7 @@ clean:
 make ARCH=arm CROSS_COMPILE=arm-none-eabi-
 ```
 _`hello.ko` should appear in that directory upon completion._
+
 4. Place `hello.ko` on your SD card.
 5. Eject it, then place the SD card in the Zybo and _mount_ it (`mount /dev mmcblk0p1 /mnt/`).
 6. _Change directory_ to the newly-mounted SD card and _list_ its contents; verify that `hello.ko` is present.
