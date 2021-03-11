@@ -7,3 +7,5 @@ if someone finds out and sends the instruction to me, I will include
 it here:
 ____________________________________________________________;
 Hoooray!
+
+*!* the original documents from which the *.pdf files are pulled are found in ./.word_docs.zip
