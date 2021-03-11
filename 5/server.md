@@ -11,8 +11,8 @@
 - Use virtual addresses to access **physical addresses** (locations)
 
 ## Deliverables
-- 6   `Multiply.ko`
-- 9   `Ironman.ko`
+- 6   `Hello.ko`
+- 9   `Multiply.ko`
 - 10  Answers to in-lab questions
 Total: 25
 
@@ -84,3 +84,10 @@ lsmod                         # verifies module removal
 - `uname -r` returns the kernel's current name and version; it's necessary for safe module dismantling.
 
 #### Part 3 - Your turn (`multiply.ko`, memory mapping)
+1. Return to the server and create a new folder to create your new multiply module (multiply), and place multiply.c and Makefile in it.
+2. Verify that the path to the Linux kernel directory (in the newly copied Makefile) remains unchanged, and modify it to compile multiply.c.
+3. In your sdk folder (Xilinx, project 4), find ‘xparameters.h’ and ‘xparameters_ps.h’ and copy them to your newly-made multiply module directory.
+4. Edit the code in multiply.c to compile and run correctly. Consult Linux Device [Drivers, 3rd Edition](https://lwn.net/Kernel/LDD3/), [chapter 2](https://static.lwn.net/images/pdf/LDD3/ch02.pdf) for tips.
+5. Once compiled, run the kernel module `multiply.ko` on the Zybo; screenshot the output and place it in the report.
+- What is your computer's mount point for the SD card?
+- If we changed `hello.c` to `goodbye.c`, what would we need to change in the `Makefile`?
